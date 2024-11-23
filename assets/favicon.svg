@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="200">
+  <!-- Background Rectangle (optional for preview) -->
+  <rect width="500" height="200" fill="#2C3E50"/>
+  
+  <!-- Text "Zen" -->
+  <text x="120" y="120" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="60" font-weight="bold">Zen</text>
+  
+  <!-- Red Circle for "B" -->
+  <circle cx="280" cy="90" r="40" fill="#FF4B4B"/>
+  
+  <!-- Text "B" inside the circle -->
+  <text x="260" y="120" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="60" font-weight="bold">B</text>
+  
+  <!-- Remaining text "ites" -->
+  <text x="310" y="120" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="60" font-weight="bold">ites</text>
+</svg>
