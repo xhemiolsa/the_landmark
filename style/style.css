@@ -3,17 +3,6 @@
   margin: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("../assets/sushi-bg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #bdc3c7;
-}
-
 #main-container {
   height: 100vh;
   display: flex;
@@ -118,12 +107,9 @@ body {
 /* Main Content */
 .container-body {
   position: relative;
-  top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  padding: 0 20px;
   flex: 1;
 }
 
@@ -134,6 +120,12 @@ body {
   align-items: center;
   width: 100%;
   position: relative;
+  background-image: url("../assets/crab.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #bdc3c7;
 }
 
 .dishes-container {
@@ -141,6 +133,7 @@ body {
   gap: 100px;
   width: 100%;
   align-items: center;
+  padding: 100px;
 }
 
 .dishes-text {
@@ -153,7 +146,7 @@ body {
   height: 100%;
   padding: 120px 20px;
   background: rgba(24, 25, 28, 0.4);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
@@ -192,6 +185,21 @@ body {
 .dishes-img img {
   width: 70%;
   height: 70%;
+}
+
+/* Dish 2 */
+.dish-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-image: url("../assets/seafood.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #bdc3c7;
 }
 
 /* Footer */
