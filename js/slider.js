@@ -5,14 +5,14 @@ const totalImages = images.length;
 let index = 0;
 
 function updateSlidePosition() {
-  const offset = -index * 100; // Calculate the offset for the current slide
+  const offset = -index * 100;
   slides.style.transform = `translateX(${offset}%)`;
 }
 
 function showNextSlide() {
   index++;
   if (index >= totalImages) {
-    index = 0; // Loop back to the first image
+    index = 0;
   }
   updateSlidePosition();
 }
@@ -20,21 +20,19 @@ function showNextSlide() {
 function showPreviousSlide() {
   index--;
   if (index < 0) {
-    index = totalImages - 1; // Loop back to the last image
+    index = totalImages - 1;
   }
   updateSlidePosition();
 }
 
-// Automatically change slide every 3 seconds
 const autoSlide = setInterval(showNextSlide, 3000);
 
-// Add event listeners for buttons
 document.querySelector(".next-btn").addEventListener("click", () => {
-  clearInterval(autoSlide); // Stop auto-slide when button is clicked
+  clearInterval(autoSlide);
   showNextSlide();
 });
 
 document.querySelector(".prev-btn").addEventListener("click", () => {
-  clearInterval(autoSlide); // Stop auto-slide when button is clicked
+  clearInterval(autoSlide);
   showPreviousSlide();
 });

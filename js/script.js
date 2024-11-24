@@ -3,18 +3,20 @@ const navItems = document.querySelector(".nav-items");
 
 burgerMenu.addEventListener("click", () => {
   navItems.classList.toggle("responsive");
-  burgerMenu.classList.toggle("open"); // Optional for animation
+  burgerMenu.classList.toggle("open");
 });
 
 $(document).ready(function () {
-  $(".nav-items a[href^='#']").on("click", function (e) {
-    e.preventDefault(); // Prevent the default anchor behavior
-    const target = $($(this).attr("href")); // Get the target element by ID
+  $(
+    ".nav-items a[href^='#'], .slider-container a[href^='#'], .footer-section a[href^='#']"
+  ).on("click", function (e) {
+    e.preventDefault();
+    const target = $($(this).attr("href"));
 
     if (target.length) {
       $("html, body").animate(
         {
-          scrollTop: target.offset().top, // Scroll to the element's top offset
+          scrollTop: target.offset().top,
         },
         800
       );

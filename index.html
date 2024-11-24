@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Zen Bites</title>
   </head>
@@ -20,15 +24,26 @@
           <span></span>
         </div>
         <div class="nav-items">
-          <a href="#" class="nav-item">Home</a>
-          <a href="#dishes" class="nav-item">Dishes</a>
+          <a href="#home" class="nav-item">Home</a>
+          <a href="#" class="nav-item">Dishes</a>
           <a href="#" class="nav-item">Contact us</a>
           <a href="#" class="nav-item">About</a>
           <a href="#" class="nav-item login-item">Login / Register</a>
         </div>
       </div>
 
-      <div class="container-body">
+      <div class="container-body" id="home">
+        <div class="slider-container">
+          <h1>Welcome to Zen Bites</h1>
+          <p>
+            The art of sushi crafted with the freshest ingredients, authentic
+            flavors, and a touch of creativity. Whether you're craving classic
+            rolls or bold new creations, we bring Japan's finest to your table.
+          </p>
+
+          <a href="#dishes" class="nav-item slider-button">Special Dishes</a>
+        </div>
+
         <div class="slider">
           <button class="prev-btn">&lt;</button>
           <div class="slides">
@@ -89,15 +104,16 @@
         <div class="footer-section">
           <h3>About Us</h3>
           <p>
-            We bring you the best products with love and care. Explore our range
-            and find what suits you best!
+            At Zen Bites, we believe food is an experience. Explore our
+            selection of handcrafted sushi rolls, sashimi platters, and
+            delicious sides like edamame, miso soup, and tempura.
           </p>
         </div>
         <div class="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Dishes</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">About Us</a></li>
           </ul>
@@ -108,7 +124,9 @@
           <p>Phone: +123 456 789</p>
           <p>Follow us on:</p>
           <div class="social-icons">
-            <!-- <a href="#"></a> -->
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
       </footer>
