@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/nav-footer.css" />
+    <link rel="stylesheet" href="./style/contact-us.css">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Zen Bites</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/zen_bites_logo.svg" alt="Logo" class="logo" />
+        </div>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-items">
+          <a href="./index.html" class="nav-item">Home</a>
+          <a href="dishes.html" class="nav-item">Dishes</a>
+          <a href="contact-us.html" class="nav-item">Contact us</a>
+          <a href="#" class="nav-item">About</a>
+          <a href="#" class="nav-item login-item">Login / Register</a>
+        </div>
+      </div>
+      <main>
+        <div class="contact-container">
+            <img src="https://coolwallpapers.me/picsup/5650142-chinese-food-wallpapers.jpg" alt="Contact Us Image" class="contact-image">
+            <h1>Contact Us</h1>
+            <p>Send us your comments and suggestions online, filling out and submitting the form below, via email address:  <b>support@zenbites.com</b></p>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder=" Write your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="text" id="phone" name="phone" placeholder="Phone number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder=" E-mail ">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subjekt</label>
+                        <select id="subject" name="subject">
+                            <option>Choose</option>
+                            <option>Comments</option>
+                            <option>Complaints</option>
+                            <option>others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="restaurant">Restaurant</label>
+                        <select id="restaurant" name="restaurant">
+                            <option>Choose</option>
+                            <option>Prishtinë</option>
+                            <option>Tiranë</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here... "></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="captcha">
+                        <input type="checkbox" id="captcha" name="captcha">
+                        <label for="captcha">I'm not a robot</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">SEND</button>
+            </form>
+        </div>
+
+
+
+      </main>
+
+     
+
+      <footer class="footer" id="footer">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We bring you the best products with love and care. Explore our range
+            and find what suits you best!
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: support@zenbites.com</p>
+          <p>Phone: +123 456 789</p>
+          <p>Follow us on:</p>
+          <div class="social-icons">
+          
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
