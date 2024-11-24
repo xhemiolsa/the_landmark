@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Zen Bites</title>
   </head>
   <body>
@@ -20,42 +21,61 @@
         </div>
         <div class="nav-items">
           <a href="#" class="nav-item">Home</a>
-          <a href="#" class="nav-item">Products</a>
-          <a href="#" class="nav-item">Contact Us</a>
+          <a href="#dishes" class="nav-item">Dishes</a>
+          <a href="#" class="nav-item">Contact us</a>
           <a href="#" class="nav-item">About</a>
           <a href="#" class="nav-item login-item">Login / Register</a>
         </div>
       </div>
 
       <div class="container-body">
-        <!-- Dish 1 -->
+        <div class="slider">
+          <button class="prev-btn">&lt;</button>
+          <div class="slides">
+            <img src="./assets/slider-1.png" alt="Image 1" />
+            <img src="./assets/slider-2.jpg" alt="Image 2" />
+            <img src="./assets/slider-3.jpg" alt="Image 3" />
+          </div>
+          <button class="next-btn">&gt;</button>
+        </div>
+
         <div class="dishes" id="dishes">
+          <!-- Dish 1 -->
+          <div class="dish-main-title dishes-title">
+            Special Dishes
+            <br />
+          </div>
           <div class="dishes-container">
             <div class="dishes-img">
               <img src="./assets/dish-1.svg" alt="dish-1" />
             </div>
             <div class="dishes-text">
               <div class="dishes-title">
-                Dish 1
+                Crab Garden Crunch
                 <br />
               </div>
               <span class="dishes-subtitle"
-                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                >Crab Garden crunch is a zesty and vibrant dish featuring crisp
+                green papaya, tangy cherry tomatoes, crunchy green beans and
+                roasted peanuts, all tossed in a bold dressing of lime juice,
+                fish sauce and chilies.
               </span>
             </div>
           </div>
         </div>
 
         <!-- Dish 2 -->
-        <div class="dishes dish-2" id="dishes">
+        <div class="dishes dish-2">
           <div class="dishes-container">
             <div class="dishes-text">
               <div class="dishes-title">
-                Dish 2
+                Golden Tofu Harmony
                 <br />
               </div>
               <span class="dishes-subtitle"
-                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                >Golden Tofu Harmony is a delightful fusion of crispy tofu
+                cubes, tossed with sweet bell peppers, fresh herbs and a
+                spicy-sweet chili sauce.
               </span>
             </div>
 
@@ -65,7 +85,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="footer-section">
           <h3>About Us</h3>
           <p>
@@ -94,5 +114,6 @@
       </footer>
     </div>
     <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

@@ -3,11 +3,13 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #main-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 
 .bg-img {
@@ -113,13 +115,63 @@
   flex: 1;
 }
 
+/* Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+}
+
+/* Buttons */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* Dishes*/
 .dishes {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  flex-direction: column;
   position: relative;
+  width: 100%;
+  padding: 100px 0px;
   background-image: url("../assets/crab.svg");
   background-size: cover;
   background-position: center;
@@ -131,9 +183,8 @@
 .dishes-container {
   display: flex;
   gap: 100px;
-  width: 100%;
   align-items: center;
-  padding: 100px;
+  width: 80%;
 }
 
 .dishes-text {
@@ -142,9 +193,9 @@
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
-  width: 100%;
-  height: 100%;
-  padding: 120px 20px;
+  width: 900px;
+  height: 300px;
+  padding: 0px 20px;
   background: rgba(24, 25, 28, 0.4);
   backdrop-filter: blur(5px);
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
@@ -163,6 +214,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.dish-main-title {
+  font-size: 80px;
 }
 
 .dishes-subtitle {
@@ -206,7 +261,7 @@
 .footer {
   position: relative;
   top: 100%;
-  background-color: #6a6a6a;
+  background-color: #000000;
   color: white;
   padding: 20px;
   display: flex;
