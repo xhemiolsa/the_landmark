@@ -24,11 +24,14 @@ main{
     font-weight: 700;
     position:relative;
 }
-.hr .text {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+
+hr .text {
+    display:flex ;
+    width: 70%;
+    justify-content:space-between;
 }
+
+  
 .menu-dishes{
     padding-left:120px ;
     color: white;
@@ -94,6 +97,15 @@ main{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 } 
+.dish-description {
+    font-size: 0.9em; 
+    color: #aaa;
+  }
+  .dish-price {
+    font-size: 1em;
+    font-weight: bold; 
+    margin-top: 5px;
+  }
 
 .hr1{
     margin-top: 20px;
