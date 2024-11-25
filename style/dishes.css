@@ -1,3 +1,8 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
 main{
     width: 100wh;
     height: auto;
@@ -17,7 +22,7 @@ main{
     display: flex;
     font-size: 35px;
     font-weight: 700;
-    position: relative;
+    position:relative;
 }
 .hr .text {
     display: flex;
@@ -29,7 +34,7 @@ main{
     color: white;
 }
 .menu {
-    width: 150px;
+    width: 200px;
     height: 150px;
     background-color:#242B32 ;
     color: white;
@@ -41,7 +46,7 @@ main{
 .close-menu{
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 10px;
     font-size: 10px;
     cursor: pointer;
 }
@@ -56,7 +61,7 @@ main{
 }
 .container-dishes {
     margin-bottom: 50px;
-    width: 60%;
+    width: 55%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -72,7 +77,8 @@ main{
     padding: 25px;
     width: 180px;
     height: 180px;
-    margin: 10px 0px;
+    margin: 5px 0px;
+    text-align: center;
 }
 .dishes:hover{
     border: 2px solid red;
@@ -86,5 +92,22 @@ main{
 }
 .dishes p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+} 
 
+.hr1{
+    margin-top: 20px;
+    background-color: #242B32;
+    width: 100%;
+    height: 50px;
+    color: #FF4B4B;
+    display:flex;
+    font-size: 30px;
+    font-weight: 700;
+    position:relative;
+}
+.hr .text1 {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
 }
