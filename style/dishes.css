@@ -1,50 +1,53 @@
-main{
-    width: 100wh;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #333E48;
-    justify-content: center;
-    
+* {
+  padding: 0;
+  margin: 0;
 }
-.hr{
-    margin-top: 90px;
-    background-color: #242B32;
-    width: 100%;
-    height: 50px;
-    color: #FF4B4B;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 35px;
-    font-weight: 700;
+
+main {
+  width: 100wh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333e48;
+  justify-content: center;
+}
+.hr {
+  margin-top: 90px;
+  background-color: #242b32;
+  width: 100%;
+  height: 50px;
+  color: #ff4b4b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
 }
 .container-dishes {
-    margin-bottom: 50px;
-    width: 60%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: white;
+  margin-bottom: 50px;
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
 }
 .container-dishes .dishes {
-    display: flex;
-    flex-direction: column;
-    height: full;
-    color:black;
-    padding: 25px;
+  display: flex;
+  flex-direction: column;
+  height: full;
+  color: black;
+  padding: 25px;
 }
-.container-dishes .dishes:hover{
-    border: 1px sold red;
+.container-dishes .dishes:hover {
+  border: 1px sold red;
 }
 .dishes img {
-    width: 200px;
-    height: 150px;
-    object-fit: contain;
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
 }
 .dishes p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
