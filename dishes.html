@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/nav-footer.css" />
-    <link rel="stylesheet" href="./style/dishes.css">
+    <link rel="stylesheet" href="./style/dishes.css" />
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Zen Bites</title>
@@ -29,55 +29,113 @@
         </div>
       </div>
       <main>
-        <div class="hr">Dishes</div>
-        <div class="container-dishes">
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
+        <div class="hr">
+          <div class="text">
+            <div class="menu-dishes" id="menu"><p>Menu</p></div>
+          </div>
+        </div>
+
+        <div id="openMenu" class="menu">
+          <div data-menu="appetizer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Appetizer</p>
+          </div>
+          <div data-menu="dimsum">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Dim Sum</p>
+          </div>
+          <div data-menu="bowlsandsoups">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Bowls & Soups</p>
+          </div>
+          <div data-menu="sushirolls">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Sushi Rolls</p>
+          </div>
+          <div data-menu="sushiplates">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Sushi Plates</p>
+          </div>
+          <div data-menu="drinks">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Drinks</p>
+          </div>
+          <div class="close-menu" id="close">X</div>
+        </div>
+
+        <div style="display: flex" class="container-dishes">
+          <div class="hr1">
+            <div class="text1">
+              <div><p id="menuHeader">Menu Name</p></div>
             </div>
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
+          </div>
+          <div class="container-menu" id="menuContainer"></div>
+          <div class="hr1">
+            <div class="text1">
+              <div><p></p></div>
             </div>
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
-            </div>
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
-            </div>
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
-            </div>
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
-            </div>
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
-            </div>
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
-            </div>
-            <div class="dishes">
-                <img src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg" alt="">
-                <p>Chicken Katsu Finger</p>
-            </div>
-      </div>
+          </div>
+        </div>
       </main>
-     
 
       <footer class="footer" id="footer">
         <div class="footer-section">
           <h3>About Us</h3>
-          <p>
-            We bring you the best products with love and care. Explore our range
-            and find what suits you best!
-          </p>
+          <p>We bring you the best products with love and care.</p>
         </div>
         <div class="footer-section">
           <h3>Quick Links</h3>
@@ -92,14 +150,9 @@
           <h3>Contact Us</h3>
           <p>Email: support@zenbites.com</p>
           <p>Phone: +123 456 789</p>
-          <p>Follow us on:</p>
-          <div class="social-icons">
-            <!-- <a href="#"></a> -->
-          </div>
         </div>
       </footer>
     </div>
-    <script src="./js/script.js"></script>
-    <script src="./js/slider.js"></script>
+    <script type="module" src="./js/dishes.js"></script>
   </body>
 </html>
