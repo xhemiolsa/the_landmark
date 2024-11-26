@@ -1,125 +1,133 @@
-
 html {
-    scroll-behavior: smooth;
-  }
-
-main{
-    width: 100wh;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #333E48;
-    justify-content: center;
-    
-}
-.hr{
-    margin-top: 90px;
-    background-color: #242B32;
-    width: 100%;
-    height: 50px;
-    color: #FF4B4B;
-    display: flex;
-    font-size: 35px;
-    font-weight: 700;
-    position:relative;
+  scroll-behavior: smooth;
 }
 
-hr .text {
-    display:flex ;
-    width: 50%;
-    justify-content:space-between;
+main {
+  width: 100wh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333e48;
+  justify-content: center;
+}
+.hr {
+  margin-top: 90px;
+  background-color: #242b32;
+  width: 100%;
+  height: 50px;
+  color: #ff4b4b;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
 }
 
-  
-.menu-dishes{
-    padding-left:120px ;
-    color: white;
+.hr .text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
+
+.menu-dishes {
+  color: white;
+  padding-right: 0;
+}
+
 .menu {
-    width: 200px;
-    height: 170px;
-    background-color:#242B32 ;
-    color: white;
-    position: absolute;
-    top: 145px;
-    left: 120px;
-    display: none;
+  width: 200px;
+  height: 170px;
+  background-color: #242b32;
+  color: white;
+  position: absolute;
+  top: 145px;
+  left: 120px;
+  display: none;
 }
-.close-menu{
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-size: 10px;
-    cursor: pointer;
+.close-menu {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 10px;
+  cursor: pointer;
 }
-.visible{
-    display: block;
+.visible {
+  display: block;
 }
-.menu div{
-    display: flex;
+.menu div {
+  display: flex;
 }
 .menu p {
-    padding: 5px 4px;
+  padding: 5px 4px;
 }
 .container-dishes {
-    margin-bottom: 50px;
-    width: 55%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: white;
-    margin-top: 10px;
+  margin-bottom: 50px;
+  width: 55%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-top: 10px;
 }
 .container-dishes .dishes {
-    display: flex;
-    flex-direction: column;
-    height: full;
-    color:black;
-    padding: 25px;
-    width: 180px;
-    height: 180px;
-    margin: 5px 0px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: full;
+  color: black;
+  padding: 25px;
+  width: 180px;
+  height: 180px;
+  margin: 5px 0px;
+  text-align: center;
 }
-.dishes:hover{
-    border: 2px solid red;
-    cursor: pointer;
-    
+.dishes:hover {
+  border: 2px solid red;
+  cursor: pointer;
 }
 .dishes img {
-    width: 200px;
-    height: 150px;
-    object-fit: contain;
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
 }
 .dishes p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-} 
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 .dish-description {
-    font-size: 0.9em; 
-    color: #aaa;
-  }
-  .dish-price {
-    font-size: 1em;
-    font-weight: bold; 
-    margin-top: 5px;
-  }
+  font-size: 0.9em;
+  color: #aaa;
+}
 
-.hr1{
-    margin-top: 20px;
-    background-color: #242B32;
-    width: 100%;
-    height: 50px;
-    color: #FF4B4B;
-    display:flex;
-    font-size: 30px;
-    font-weight: 700;
-    position:relative;
+.container-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 15px 0;
+}
+.dish-price {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.hr1 {
+  margin-top: 20px;
+  background-color: #242b32;
+  width: 100%;
+  height: 50px;
+  color: #ff4b4b;
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  align-items: center;
 }
 .hr .text1 {
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
 }
