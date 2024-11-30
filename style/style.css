@@ -7,11 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#main-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .bg-img {
   width: 100%;
   height: auto;

@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 main {
   width: 100wh;
   height: 100vh;
