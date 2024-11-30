@@ -109,7 +109,7 @@ html {
 }
 
 /* Dishes*/
-.dishes {
+.dishes, .about-us {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,14 +125,18 @@ html {
   background-color: #bdc3c7;
 }
 
-.dishes-container {
+.about-us{
+  background-image: url("../assets/slider-3.jpg");
+}
+
+.dishes-container, .about-us-container {
   display: flex;
   gap: 100px;
   align-items: center;
   width: 80%;
 }
 
-.dishes-text {
+.dishes-text , .about-us-text{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -161,11 +165,11 @@ html {
   line-height: normal;
 }
 
-.dish-main-title {
+.dish-main-title, .about-us-title{
   font-size: 80px;
 }
 
-.dishes-subtitle {
+.dishes-subtitle, .about-us-subtitle {
   color: #ffffff;
   font-family: "Montserrat";
   font-size: 22px;
@@ -175,14 +179,14 @@ html {
   width: 100%;
 }
 
-.dishes-img {
+.dishes-img, .about-us-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.dishes-img img {
+.dishes-img img, .about-us-img img {
   width: 70%;
   height: 70%;
 }
