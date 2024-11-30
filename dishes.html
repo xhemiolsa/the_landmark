@@ -32,70 +32,105 @@
         </div>
       </div>
       <main>
-        <div class="hr">Dishes</div>
-        <div class="container-dishes">
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+        <div class="hr">
+          <div class="text">
+            <div class="menu-dishes" id="menu"><p>Menu</p></div>
           </div>
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+        </div>
+
+        <div id="openMenu" class="menu">
+          <div data-menu="appetizer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Appetizer</p>
           </div>
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+          <div data-menu="dimsum">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Dim Sum</p>
           </div>
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+          <div data-menu="bowlsandsoups">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Bowls & Soups</p>
           </div>
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+          <div data-menu="sushirolls">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Sushi Rolls</p>
           </div>
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+          <div data-menu="sushiplates">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Sushi Plates</p>
           </div>
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+          <div data-menu="drinks">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="red"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+            <p>Drinks</p>
           </div>
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+          <div class="close-menu" id="close">X</div>
+        </div>
+
+        <div style="display: flex" class="container-dishes">
+          <div class="hr1">
+            <div class="text1">
+              <div><p id="menuHeader">Menu Name</p></div>
+            </div>
           </div>
-          <div class="dishes">
-            <img
-              src="https://www.sushicokosova.com/site/products/small/1713526955_1.jpg"
-              alt=""
-            />
-            <p>Chicken Katsu Finger</p>
+          <div class="container-menu" id="menuContainer"></div>
+          <div class="hr1">
+            <div class="text1">
+              <div><p></p></div>
+            </div>
           </div>
         </div>
       </main>
@@ -103,11 +138,7 @@
       <footer class="footer" id="footer">
         <div class="footer-section">
           <h3>About Us</h3>
-          <p>
-            At Zen Bites, we believe food is an experience. Explore our
-            selection of handcrafted sushi rolls, sashimi platters, and
-            delicious sides like edamame, miso soup, and tempura.
-          </p>
+          <p>We bring you the best products with love and care.</p>
         </div>
         <div class="footer-section">
           <h3>Quick Links</h3>
@@ -216,5 +247,6 @@
     <script src="./js/script.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/login-register.js"></script>
+    <script type="module" src="./js/dishes.js"></script>
   </body>
 </html>
